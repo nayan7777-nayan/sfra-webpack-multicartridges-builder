@@ -1,0 +1,51 @@
+{
+  "name": "sfra-webpack-multicartridges-builder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "licence": "see in readme.md",
+  "scripts": {
+    "dev": "webpack --env.dev",
+    "prod": "webpack",
+    "watch": "webpack --env.dev --watch"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.51",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.51",
+    "@babel/preset-env": "^7.0.0-beta.51",
+    "@tridnguyen/config": "^2.3.1",
+    "babel-loader": "^8.0.0-beta.3",
+    "chai": "^3.5.0",
+    "clean-webpack-plugin": "^1.0.1",
+    "cleave.js": "^1.0.1",
+    "css-loader": "^0.28.11",
+    "eslint": "^3.2.2",
+    "eslint-config-airbnb-base": "^5.0.1",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-import": "^1.12.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mocha": "^5.2.0",
+    "mocha-junit-reporter": "^1.12.0",
+    "node-sass": "^4.9.4",
+    "postcss-loader": "^2.1.5",
+    "proxyquire": "1.7.4",
+    "sass-loader": "^7.0.3",
+    "sgmf-scripts": "^2.1.1",
+    "shelljs": "^0.7.7",
+    "sinon": "^1.17.4",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "terser-webpack-plugin": "^1.2.3",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "archiver": "^3.0.0",
+    "context": "0.0.1",
+    "fs": "0.0.1-security",
+    "fs-extra": "^7.0.1",
+    "minimist": "^1.2.0",
+    "stylelint": "^9.10.1",
+    "webpack": "^4.39.3"
+  },
+  "paths": {
+    "base": "../cartridges/app_storefront_base"
+  }
+}
