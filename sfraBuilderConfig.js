@@ -2,8 +2,9 @@
 
 const path = require('path');
 const fs = require('fs');
-const setDirPath = '../cartridges';
-const allDirBuild = "base";
+const setDirPath = '../';
+const rootBase = '../storefront-reference-architecture-master/cartridges';
+const allDirBuild = "custom";
 
 /**
  * Collect All Dynamic cartridges directories find logic
@@ -33,12 +34,12 @@ module.exports.aliasConfig = {
         
 		base: path.resolve(
             process.cwd(),
-			`${setDirPath}/app_storefront_base/cartridge/client/default/js`    // ES6 syntax 
+			`${rootBase}/app_storefront_base/cartridge/client/default/js`    // ES6 syntax 
             
         ),
 		baseCSS: path.resolve(
             process.cwd(),
-			`${setDirPath}/app_storefront_base/cartridge/client/default/scss`    // ES6 syntax 
+			`${rootBase}/app_storefront_base/cartridge/client/default/scss`    // ES6 syntax 
             
         )
     }
@@ -51,10 +52,10 @@ module.exports.aliasConfig = {
 
 switch(allDirBuild) {
   case "base":
-    module.exports.cartridges = [setDirPath+'/app_storefront_base'];
+    module.exports.cartridges = [rootBase+'/app_storefront_base'];
     break;
   case "custom":
-    module.exports.cartridges = [setDirPath+'/app_storefront_custom'];
+    module.exports.cartridges = [setDirPath+'/app_storefront_custom',setDirPath+'/plugin_wishlists'];
     break;
   case "all":
     module.exports.cartridges = WebPackDir.readSfraDir();
