@@ -20,7 +20,7 @@ This plugin let you bundle all your `js`, `scss` files out of the box.
 
 - Install [SFRA](https://github.com/SalesforceCommerceCloud/storefront-reference-architecture) 
 - Run `npm install` to install all needed `node_modules`
-- This custom sfra builder folder place it in a folder structure like this
+- This custom sfra builder folder place it in a root folder structure like this
 
 **Other structures are also supported as long as you configure the path accordingly in `sfraBuilderConfig.js`**
 
@@ -28,12 +28,12 @@ Example Structure
 
 ```
 .
-+-- storefront-reference-applicaton
-  -- cartridges
-	 -- app_storefront_base
-	 -- app_storefront_custom
-	 -- ....
-  -- sfra-webpack-multicartridges-builder
++-- storefront-reference-architecture-master
++-- sfra-webpack-multicartridges-builder
++-- int_certona_sfra
++-- plugin_wishlists
++-- app_storefront_custom
++-- ...  
 ```
 
 ## Usage
