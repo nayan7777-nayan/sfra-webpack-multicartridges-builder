@@ -41,7 +41,7 @@
     "context": "0.0.1",
     "fs": "0.0.1-security",
     "fs-extra": "^7.0.1",
-    "minimist": "^1.2.0",
+    "minimist": "^1.2.6",
     "stylelint": "^9.10.1",
     "webpack": "^4.39.3"
   },
