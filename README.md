@@ -1,7 +1,7 @@
 # SFRA Webpack Multi Cartridges builder 
 
 ## Limitation of default sfra webpack bundling
-
+- Supported only Nodejs 12 & 14 versions
 - At the same time only single cartridge js & scss can be compiled. 
 - To list custom cartridge we need to explicitly mention ‘packageName’ variable in package.json.
 - All custom cartridges bundling (js & scss files) gets created in single ‘app_storefront_base’ cartridge static folder.
